@@ -1,0 +1,15 @@
+<h1>Labs component</h1>
+
+<h2>Frutas</h2>
+<ul>
+    @for (fruit of fruits; track $index) {
+    <li>{{ fruit }}</li>
+    }
+</ul>
+
+<h2>Event binding: keydown</h2>
+<input type="text" (keydown)="changeTextKeyboard($event)" />
+<p>I'm the input content => {{ valueInput }}</p>
+
+<h2>Signal</h2>
+<p>{{ signalName() }}</p>
