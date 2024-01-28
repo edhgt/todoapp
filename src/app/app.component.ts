@@ -7,8 +7,15 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todoapp';
+  title = 'todo-app';
+  welcome = 'Bienvenido a mi primera aplicación con Angular';
+  tasks = [
+    'Instalar Angular CLI',
+    'Crear proyecto',
+    'Crear componente',
+    'Crear servicio',
+  ];
 }
